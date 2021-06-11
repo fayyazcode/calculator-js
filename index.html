@@ -8,39 +8,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
+    <div class="wrapper">
         <div class="container">
-            <div class="row display">
-                <input type="text" id="display">
-            </div>
-            <div class="row">
-                <div class="seven btn">7</div>
-                <div class="eight btn">8</div>
-                <div class="nine btn">9</div>
-                <div class="divide btn">/</div>
-            </div>
-            <div class="row">
-                <div class="four btn">4</div>
-                <div class="five btn">5</div>
-                <div class="six btn">6</div>
-                <div class="multi btn">x</div>                
-            </div>
-            <div class="row">
-                <div class="one btn">1</div>
-                <div class="two btn">2</div>
-                <div class="three btn">3</div>
-                <div class="minus btn">-</div>
-
-            </div>
-
-            <div class="row">
-                <div class="mod btn">%</div>
-                <div class="zero btn">0</div>
-                <div class="equal btn">=</div>
-                <div class="plus btn">+</div>
-            </div>
-        </div>
-    </div>
+          <h1>Calculator</h1>
+    
+          <div class="first-row">
+            <input type="text" name="result" class="result" id="result" value="" placeholder="0" readonly />
+            
+          </div>
+          <div class="second-row">
+            <input type="button" value="1" onclick="display(1)" id="one" />
+            <input type="button" value="2" onclick="display(2)" id="two" />
+            <input type="button" value="3" id="three" onclick="display(3)" />
+            <input type="button" value="+" onclick="display('+')" />
+          </div>
+          <div class="third-row">
+            <input type="button" value="4" id="four" onclick="display(4)" />
+            <input type="button" value="5" id="five" onclick="display(5)" />
+            <input type="button" value="6" id="six" onclick="display(6)" />
+            <input type="button" value="-" onclick="display('-')" />
+          </div>
+          <div class="fourth-row">
+            <input type="button" value="7" id="seven" onclick="display(7)" />
+            <input type="button" value="8" id="eight" onclick="display(8)" />
+            <input type="button" value="9" id="nine" onclick="display(9)" />
+            <input type="button" value="x" onclick="display('*')" />
+          </div>
+          <div class="fifth-row">
+            <input type="button" value="/" onclick="display('/')" />
+    
+            <input type="button" value="0" id="zero" onclick="display(0)" />
+            <input type="button" value="." class="dot" onclick="display('.')" />
+            
+          </div>
+          <div class="sixth-row">
+            <input type="button" value="C" onclick="clearScreen()" id="clear" />
+            <input type="button" value="=" onclick="result.value = eval(result.value)" id="equal" />
+          </div>
     <script src="app.js"></script>
 </body>
 </html>
