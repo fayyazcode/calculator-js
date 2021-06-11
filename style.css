@@ -1,0 +1,17 @@
+.container{
+    width: 250px;
+    margin: 0 auto;
+    padding: 2rem;
+background-color: rgba(109, 109, 109, 0.26);
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 3px 2px white;
+    margin: 3px;
+}
