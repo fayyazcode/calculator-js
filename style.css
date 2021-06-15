@@ -80,8 +80,9 @@
     width: 48%;
   }
   #clear,
-  #equal{
-    width: 48%;
+  #equal,
+  #del{
+    width: 31.5%;
   }
   
   

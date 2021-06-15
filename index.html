@@ -11,10 +11,17 @@
     <div class="wrapper">
         <div class="container">
           <h1>Calculator</h1>
+
     
           <div class="first-row">
             <input type="text" name="result" class="result" id="result" value="" placeholder="0" readonly />
             
+          </div>
+          <div class="sixth-row">
+            <input type="button" value="C" onclick="clearScreen()" id="clear" />
+            <input type="button" value="del" id="del" onclick="removeOne()" />
+            <input type="button" value="=" onclick="result.value = eval(result.value)" id="equal" />
+           
           </div>
           <div class="second-row">
             <input type="button" value="1" onclick="display(1)" id="one" />
@@ -35,16 +42,14 @@
             <input type="button" value="x" onclick="display('*')" />
           </div>
           <div class="fifth-row">
-            <input type="button" value="/" onclick="display('/')" />
-    
+            
             <input type="button" value="0" id="zero" onclick="display(0)" />
             <input type="button" value="." class="dot" onclick="display('.')" />
+            <input type="button" value="/" onclick="display('/')" />
+           
             
           </div>
-          <div class="sixth-row">
-            <input type="button" value="C" onclick="clearScreen()" id="clear" />
-            <input type="button" value="=" onclick="result.value = eval(result.value)" id="equal" />
-          </div>
+         
     <script src="app.js"></script>
 </body>
 </html>
