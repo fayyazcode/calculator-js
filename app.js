@@ -8,7 +8,7 @@ function clearScreen() {
   function display(num) {
     var res = document.getElementById("result");
   var lastVal= res.value.slice(res.value.length - 1);
-  var operators=["+","-","/","*"];
+  var operators=["+","-","/","*","."];
   if(operators.indexOf(lastVal) !== -1 && operators.indexOf(num) !== -1){
     res.value = res.value.slice(0,res.value.length-1)+num
   }
